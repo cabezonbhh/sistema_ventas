@@ -1,0 +1,11 @@
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\bin\Debug\Sistema de ventas.exe.config
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\bin\Debug\Sistema de ventas.exe
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\bin\Debug\Sistema de ventas.pdb
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\obj\Debug\Sistema de ventas.csprojAssemblyReference.cache
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\obj\Debug\Sistema_de_ventas.manual_connection.resources
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\obj\Debug\Sistema_de_ventas.Properties.Resources.resources
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\obj\Debug\Sistema de ventas.csproj.GenerateResource.cache
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\obj\Debug\Sistema de ventas.csproj.CoreCompileInputs.cache
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\obj\Debug\Sistema de ventas.exe
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\obj\Debug\Sistema de ventas.pdb
+T:\Programacion\C#\Sistema_ventas\Sistema de ventas\Sistema de ventas\obj\Debug\Sistema_de_ventas.GUI.Usuario_y_servicios.frm_nuevo_usuario.resources
