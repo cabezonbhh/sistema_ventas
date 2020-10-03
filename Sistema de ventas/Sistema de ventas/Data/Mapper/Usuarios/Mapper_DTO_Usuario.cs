@@ -36,6 +36,7 @@ namespace Sistema_de_ventas.Data.Mapper.Usuarios
             dto.Email = usuario.Email;
             dto.IdRol = usuario.IdRol;
             dto.Legajo = usuario.Legajo;
+            dto.Rol = usuario.rol.Nombre;
             return dto;
         }
 

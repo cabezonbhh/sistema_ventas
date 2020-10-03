@@ -16,5 +16,6 @@ namespace Sistema_de_ventas.Data.DataTransferObject
         public string Email { get; set; }
         public int IdRol { get; set; }
         public string Legajo { get; set; }
+        public string Rol { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_de_ventas.Business.Usuarios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace Sistema_de_ventas.Business
         public string Email { get; set; }
         public int IdRol { get; set; }
         public string Legajo { get; set; }
+        public Rol rol { get; set; }
 
         public Usuario()
         {
@@ -27,6 +29,7 @@ namespace Sistema_de_ventas.Business
             this.Email = "Sin dato";
             this.IdRol = 0;
             this.Legajo = "Sin dato";
+            this.rol = null;
         }
 
         public Usuario(int idusuario, string nombre, string apellido, string nombre_usuario, string password, string email, int idRol, string legajo)

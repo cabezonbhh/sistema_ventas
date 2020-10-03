@@ -19,9 +19,14 @@ namespace Sistema_de_ventas.Others
                 instance = new Support();
             return instance;
         }
-
-
-
+        public void llenar_combos(ComboBox combo, string tabla, string value, string display)
+        {
+            // metodo para cualquier combo donde pasa el combo, la tabla, el id y el campo descripcion.
+            //combo.DataSource = DBHelper.getDBHelper().ConsultarTabla(tabla); //
+            combo.DisplayMember = display; //nombre del campo que lista el combo, por ejemplo "Nombre"
+            combo.ValueMember = value; // nombre del campo Id que se guarda en cada ítems de la lista, ejemplo idRol
+            combo.SelectedIndex = -1; // para que el combo no aparezca con algo seleccionado 
+        }
 
         public bool esUnNumero(string cadena)
         {
@@ -576,5 +581,6 @@ namespace Sistema_de_ventas.Others
             }
         }
     }
+    
 
 }

@@ -45,20 +45,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Sesion.cs" />
+    <Compile Include="Business\Usuarios\Rol.cs" />
     <Compile Include="Business\Usuarios\Usuario.cs" />
     <Compile Include="Connection\DBHelper.cs" />
-    <Compile Include="Control\Usuarios\control_nuevo_usuario.cs" />
+    <Compile Include="Control\Usuarios\Control_iniciar_sesion.cs" />
+    <Compile Include="Control\Usuarios\Control_nuevo_usuario.cs" />
+    <Compile Include="Control\Usuarios\Control_obtener_usuarios.cs" />
+    <Compile Include="Control\Usuarios\Control_Editar_Usuario.cs" />
+    <Compile Include="Data\DataAccessObjetc\Usuarios\DAO_Sesion.cs" />
     <Compile Include="Data\DataAccessObjetc\Usuarios\DAO_Usuario.cs" />
     <Compile Include="Data\DataTransferObject\Usuarios\DTO_Usuario.cs" />
     <Compile Include="Data\Mapper\Usuarios\Mapper_DTO_Usuario.cs" />
-    <Compile Include="Interface\IDAO_Usuario.cs" />
-    <Compile Include="Others\Encryptor.cs" />
-    <Compile Include="Connection\manual_connection.cs">
+    <Compile Include="GUI\Usuario_y_servicios\frm_edit_usuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connection\manual_connection.Designer.cs">
-      <DependentUpon>manual_connection.cs</DependentUpon>
+    <Compile Include="GUI\Usuario_y_servicios\frm_edit_usuario.Designer.cs">
+      <DependentUpon>frm_edit_usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Usuario_y_servicios\frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Usuario_y_servicios\frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IDAO_Sesion.cs" />
+    <Compile Include="Interface\IDAO_Usuario.cs" />
+    <Compile Include="Main_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Test.Designer.cs">
+      <DependentUpon>Main_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Encryptor.cs" />
     <Compile Include="GUI\Usuario_y_servicios\frm_nuevo_usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,11 +87,19 @@
     <Compile Include="Others\Support.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Connection\manual_connection.resx">
-      <DependentUpon>manual_connection.cs</DependentUpon>
+    <Compile Include="Services\Service_Sesion.cs" />
+    <Compile Include="Services\Service_Usuario.cs" />
+    <EmbeddedResource Include="GUI\Usuario_y_servicios\frm_edit_usuario.resx">
+      <DependentUpon>frm_edit_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Usuario_y_servicios\frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Usuario_y_servicios\frm_nuevo_usuario.resx">
       <DependentUpon>frm_nuevo_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Test.resx">
+      <DependentUpon>Main_Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,8 +123,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
