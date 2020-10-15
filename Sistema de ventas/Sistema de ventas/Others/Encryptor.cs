@@ -22,7 +22,7 @@ namespace Sistema_de_ventas.Connection
         private string key;
 
 
-        public Encryptor()
+        private Encryptor()
         {
             des = new TripleDESCryptoServiceProvider();
             hashmd5 = new MD5CryptoServiceProvider();
@@ -33,8 +33,14 @@ namespace Sistema_de_ventas.Connection
         public static Encryptor GetEncryptor()
         {
             if (instance == null)
+            {
                 instance = new Encryptor();
-            return instance;
+                return instance;
+            }               
+            else
+            {
+                return instance;
+            }
         }
         private byte[] Encrypt(byte[] clearData, byte[] Key, byte[] IV)
         {

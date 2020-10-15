@@ -224,6 +224,7 @@
             // txt_email
             // 
             this.txt_email.Location = new System.Drawing.Point(162, 290);
+            this.txt_email.MaxLength = 200;
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(316, 24);
             this.txt_email.TabIndex = 12;
@@ -231,6 +232,7 @@
             // txt_legajo
             // 
             this.txt_legajo.Location = new System.Drawing.Point(162, 240);
+            this.txt_legajo.MaxLength = 15;
             this.txt_legajo.Name = "txt_legajo";
             this.txt_legajo.Size = new System.Drawing.Size(174, 24);
             this.txt_legajo.TabIndex = 11;
@@ -239,6 +241,7 @@
             // txt_apellido
             // 
             this.txt_apellido.Location = new System.Drawing.Point(162, 190);
+            this.txt_apellido.MaxLength = 50;
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(316, 24);
             this.txt_apellido.TabIndex = 10;
@@ -247,6 +250,7 @@
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(162, 140);
+            this.txt_nombre.MaxLength = 50;
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(316, 24);
             this.txt_nombre.TabIndex = 9;
@@ -255,6 +259,7 @@
             // txt_contraseña_usuario
             // 
             this.txt_contraseña_usuario.Location = new System.Drawing.Point(163, 90);
+            this.txt_contraseña_usuario.MaxLength = 50;
             this.txt_contraseña_usuario.Name = "txt_contraseña_usuario";
             this.txt_contraseña_usuario.Size = new System.Drawing.Size(316, 24);
             this.txt_contraseña_usuario.TabIndex = 8;
@@ -262,6 +267,7 @@
             // txt_nombre_usuario
             // 
             this.txt_nombre_usuario.Location = new System.Drawing.Point(162, 40);
+            this.txt_nombre_usuario.MaxLength = 50;
             this.txt_nombre_usuario.Name = "txt_nombre_usuario";
             this.txt_nombre_usuario.Size = new System.Drawing.Size(316, 24);
             this.txt_nombre_usuario.TabIndex = 7;

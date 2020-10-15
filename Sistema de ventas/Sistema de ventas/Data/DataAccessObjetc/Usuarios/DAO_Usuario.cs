@@ -63,6 +63,22 @@ namespace Sistema_de_ventas.Data.DataAccessObjetc.Usuarios
             return lista;
         }
 
+        public Usuario getUsuario(int id)
+        {
+            Usuario usuario = null;
+            var param1 = new SqlParameter("@id", id);
+            param1.SqlDbType = SqlDbType.Int;
+
+            DataTable tabla = helper.consultarStoredProcedureConUnParametro("SP_Obtener_usuario_por_id",param1);
+            if (tabla != null)
+            {
+                foreach (DataRow fila in tabla.Rows)
+                {
+                    usuario = this.map_usuario(fila);
+                }
+            }
+            return usuario;
+        }
         public bool modificarUsuario(Usuario usuario, bool control)
         {
             string sp = "SP_Modificar_usuario";

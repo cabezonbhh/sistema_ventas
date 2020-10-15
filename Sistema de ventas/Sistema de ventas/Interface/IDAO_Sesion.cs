@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_de_ventas.Business;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Sistema_de_ventas.Interface
 {
     interface IDAO_Sesion
     {
-        bool iniciar_sesion(string usuario, string contraseña);
+        Usuario iniciar_sesion(string usuario, string contraseña);
     }
 }

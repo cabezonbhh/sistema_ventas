@@ -1,4 +1,5 @@
 ﻿
+using Sistema_de_ventas.Business;
 using Sistema_de_ventas.Control.Usuarios;
 using Sistema_de_ventas.Data.DataTransferObject;
 using Sistema_de_ventas.GUI.Usuario_y_servicios;
@@ -66,7 +67,8 @@ namespace Sistema_de_ventas
 
         private void Main_Test_Load(object sender, EventArgs e)
         {
-            this.cargarGrilla(); 
+            this.cargarGrilla();
+            label1.Text = Sesion.getSesion().getNombreUsuarioLogueado();
         }
 
         private void actualizarListaUsuarios()

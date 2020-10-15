@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_edit_usuario));
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.gb_datos_usuario = new System.Windows.Forms.GroupBox();
@@ -65,7 +66,7 @@
             this.btn_cancelar.Location = new System.Drawing.Point(557, 467);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
-            this.btn_cancelar.TabIndex = 7;
+            this.btn_cancelar.TabIndex = 9;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
             // 
@@ -76,7 +77,7 @@
             this.btn_guardar.Location = new System.Drawing.Point(459, 467);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(75, 23);
-            this.btn_guardar.TabIndex = 6;
+            this.btn_guardar.TabIndex = 8;
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.UseVisualStyleBackColor = true;
             // 
@@ -231,50 +232,56 @@
             this.cbo_roles.Location = new System.Drawing.Point(162, 339);
             this.cbo_roles.Name = "cbo_roles";
             this.cbo_roles.Size = new System.Drawing.Size(173, 26);
-            this.cbo_roles.TabIndex = 13;
+            this.cbo_roles.TabIndex = 7;
             // 
             // txt_email
             // 
             this.txt_email.Location = new System.Drawing.Point(162, 289);
+            this.txt_email.MaxLength = 200;
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(316, 24);
-            this.txt_email.TabIndex = 12;
+            this.txt_email.TabIndex = 6;
             // 
             // txt_legajo
             // 
             this.txt_legajo.Location = new System.Drawing.Point(162, 239);
+            this.txt_legajo.MaxLength = 15;
             this.txt_legajo.Name = "txt_legajo";
             this.txt_legajo.Size = new System.Drawing.Size(174, 24);
-            this.txt_legajo.TabIndex = 11;
+            this.txt_legajo.TabIndex = 5;
             // 
             // txt_apellido
             // 
             this.txt_apellido.Location = new System.Drawing.Point(162, 189);
+            this.txt_apellido.MaxLength = 50;
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(316, 24);
-            this.txt_apellido.TabIndex = 10;
+            this.txt_apellido.TabIndex = 4;
             // 
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(162, 139);
+            this.txt_nombre.MaxLength = 50;
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(316, 24);
-            this.txt_nombre.TabIndex = 9;
+            this.txt_nombre.TabIndex = 3;
             // 
             // txt_contraseña_usuario
             // 
             this.txt_contraseña_usuario.Enabled = false;
             this.txt_contraseña_usuario.Location = new System.Drawing.Point(163, 90);
+            this.txt_contraseña_usuario.MaxLength = 50;
             this.txt_contraseña_usuario.Name = "txt_contraseña_usuario";
             this.txt_contraseña_usuario.Size = new System.Drawing.Size(316, 24);
-            this.txt_contraseña_usuario.TabIndex = 8;
+            this.txt_contraseña_usuario.TabIndex = 2;
             // 
             // txt_nombre_usuario
             // 
             this.txt_nombre_usuario.Location = new System.Drawing.Point(162, 40);
+            this.txt_nombre_usuario.MaxLength = 50;
             this.txt_nombre_usuario.Name = "txt_nombre_usuario";
             this.txt_nombre_usuario.Size = new System.Drawing.Size(316, 24);
-            this.txt_nombre_usuario.TabIndex = 7;
+            this.txt_nombre_usuario.TabIndex = 1;
             // 
             // lbl_roles
             // 
@@ -347,6 +354,7 @@
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.gb_datos_usuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_edit_usuario";

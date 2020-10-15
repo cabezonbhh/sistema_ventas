@@ -12,14 +12,15 @@ namespace Sistema_de_ventas.Business
        
         private static Sesion instance; // variable que almacena una instancia de esta misma clase para utilizar el patron singleton
         private DTO_Usuario logueado;
+
         //e.Encrypt(aca va la cadena, e.AppPwdUnique, int.Parse("256"))
 
-        private Sesion(DTO_Usuario login) // constructor privado que va a ser llamado por el metodo getDBHelper(). Se utiliza para el patron singleton
+        private Sesion() // constructor privado que va a ser llamado por el metodo getDBHelper(). Se utiliza para el patron singleton
         {
-            logueado = login;
+            logueado = null;
         }
 
-        public static Sesion getSesion(DTO_Usuario login)//metodo que devuelve la instancia unica.
+        public static Sesion getSesion()//metodo que devuelve la instancia unica.
         {
             if(instance != null)
             {
@@ -27,14 +28,15 @@ namespace Sistema_de_ventas.Business
             }
             else
             {
-                instance = new Sesion(login);
+                instance = new Sesion();
                 return instance;
             }
         }
 
-        public static Sesion getSesion()//metodo que devuelve la instancia unica.
+        public bool cargarLogueado(DTO_Usuario logueado)
         {
-            return instance;
+            this.logueado = logueado;
+            return logueado == null;
         }
 
         public int getIdLogueado()

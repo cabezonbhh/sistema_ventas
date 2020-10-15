@@ -31,12 +31,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.lbl_no_data = new System.Windows.Forms.Label();
             this.col_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_nombre_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.lbl_no_data = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,28 +81,6 @@
             this.dgv.Size = new System.Drawing.Size(589, 252);
             this.dgv.TabIndex = 2;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(41, 210);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 36);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // lbl_no_data
-            // 
-            this.lbl_no_data.AutoSize = true;
-            this.lbl_no_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_no_data.ForeColor = System.Drawing.Color.Red;
-            this.lbl_no_data.Location = new System.Drawing.Point(134, 341);
-            this.lbl_no_data.Name = "lbl_no_data";
-            this.lbl_no_data.Size = new System.Drawing.Size(230, 24);
-            this.lbl_no_data.TabIndex = 4;
-            this.lbl_no_data.Text = "No hay datos cargados!";
-            this.lbl_no_data.Visible = false;
-            // 
             // col_id
             // 
             this.col_id.HeaderText = "ID";
@@ -127,11 +106,43 @@
             this.col_rol.Name = "col_rol";
             this.col_rol.ReadOnly = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(41, 210);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 36);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // lbl_no_data
+            // 
+            this.lbl_no_data.AutoSize = true;
+            this.lbl_no_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_no_data.ForeColor = System.Drawing.Color.Red;
+            this.lbl_no_data.Location = new System.Drawing.Point(134, 341);
+            this.lbl_no_data.Name = "lbl_no_data";
+            this.lbl_no_data.Size = new System.Drawing.Size(230, 24);
+            this.lbl_no_data.TabIndex = 4;
+            this.lbl_no_data.Text = "No hay datos cargados!";
+            this.lbl_no_data.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(160, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            // 
             // Main_Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_no_data);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dgv);
@@ -157,5 +168,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn col_nombre_usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_password;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_rol;
+        private System.Windows.Forms.Label label1;
     }
 }

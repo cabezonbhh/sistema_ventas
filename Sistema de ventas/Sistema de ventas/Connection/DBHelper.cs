@@ -18,7 +18,7 @@ namespace Sistema_de_ventas.Connection
 
         private DBHelper() // constructor privado que va a ser llamado por el metodo getDBHelper(). Se utiliza para el patron singleton
         {
-            e = new Encryptor();
+            e = Encryptor.GetEncryptor();
             string_conexion = cnstring;
         }
 
@@ -358,5 +358,6 @@ namespace Sistema_de_ventas.Connection
                 return resultado;
             }
         }
+
     }
 }

@@ -13,6 +13,7 @@ namespace Sistema_de_ventas.Interface
         bool registrarNuevoUsuario(Usuario usuario);
         bool modificarUsuario(Usuario usuario, bool control);
         bool eliminarUsuario(int id);
+        Usuario getUsuario(int id);
         IList<Rol> getRoles();
         IList<Usuario> getUsuarios();
 
